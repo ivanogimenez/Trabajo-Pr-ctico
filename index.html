@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto CV</title>
-    <link rel="stylesheet" href="./custom/estilo.css" />
-  </head>
-  <body>
-    <!--NavBar-->
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm"
-    >
-      <div class="container-fluid">
-        <!-- Boton Collapse-->
-        <a href="#" class="navbar-brand">Mi CV</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Lista de Elementos-->
-        <div class="collapse navbar-collapse" id="navbarNav">
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./custom/estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+</head>
+
+<body>
+  <div class="Contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="#">Iván Claudio Giménez
+        </a>
+      </div>
+    </header>
+  </div>
+  <!--NavBar-->
+  <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm">
+    <div class="container-fluid">
+      <!-- Boton Collapse-->
+      <a href="#" class="navbar-brand">Mi CV</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+        title="Alternar navegation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Lista de Elementos-->
+      <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-1 rounded">
               <a href="#hero" class="nav-link px-3">Inicio</a>
@@ -40,115 +51,159 @@
             </li>
             <li class="nav-item mx-1 rounded">
               <a href="#skills" class="nav-link px-3">Habilidades</a>
+            <li class="nav-item mx-1 rounded">
+              <a href="#skills" class="nav-link px-3">Proyectos GitHub</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!--Hero Section-->
-    <section id="hero" class="hero">
-      <h1>Iván Claudio Giménez</h1>
-      <p>Desarrolador Full Stack|Maquetador Web</p>
-    </section>
-    <!--Informacion Personal-->
-    <section id="info" class="info-section bg-light">
-      <div class="container">
-        <h2 class="section-title">Información Personal</h2>
-        <div class="row">
-          <!--Foto Perfil-->
-          <div class="col-md-4 d-flex justify-content-center mb-3">
-            <img
-              src="./imagenes/Foto de Perfil Linkedin Asistente virtual Minimalista Celeste.png"
-              alt="Foto de Perfil"
-              class="img-fluid rounded-circle"
-            />
-          </div>
-          <!--Datos-->
-          <div class="col-md-8">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <strong>Nombre:</strong> Tu Nombre
-              </li>
-              <li class="list-group-item">
-                <strong>Correo:</strong> el.nombre@ejemplo.com
-              </li>
-              <li class="list-group-item">
-                <strong>Teléfono:</strong> +54 123 456 789
-              </li>
-              <li class="list-group-item">
-                <strong>Ubicación:</strong> Ciudad Autónoma de Buenos Aires, Argentina
-              </li>
-            </ul>
-          </div>
+  <!--Hero Section-->
+  <section id="hero" class="hero">
+    <h1>Iván Claudio Giménez</h1>
+    <p>Desarrolador Full Stack|Maquetador Web</p>
+  </section>
+  <!--Informacion Personal-->
+  <section id="info" class="info-section bg-light">
+    <div class="container">
+      <h2 class="section-title">Información Personal</h2>
+      <div class="row">
+        <!--Foto Perfil-->
+        <div class="col-md-4 d-flex justify-content-center mb-3">
+          <img src="./imagenes/Foto de Perfil Linkedin Asistente virtual Minimalista Celeste.png" alt="Foto de Perfil"
+            class="img-fluid rounded-circle" />
+        </div>
+        <!--Datos-->
+        <div class="col-md-8">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>Nombre:</strong> Tu Nombre
+            </li>
+            <li class="list-group-item">
+              <strong>Correo:</strong> el.nombre@ejemplo.com
+            </li>
+            <li class="list-group-item">
+              <strong>Teléfono:</strong> +54 123 456 789
+            </li>
+            <li class="list-group-item">
+              <strong>Ubicación:</strong> Ciudad Autónoma de Buenos Aires, Argentina
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!--Experiencia Laboral-->
-    <section id="experience" class="experience-section">
-      <div class="container">
-        <h2 class="section-title">Experiencia Laboral</h2>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <strong>Desarrollador Full Stack</strong> - Empresa X
-            (2020-Presente)
-            <p>
-              Desarrollé aplicaciones web utilizando el stack MERN (MongoDB,
-              Express, React, Node.js).
-            </p>
-          </li>
-          <li class="list-group-item">
-            <strong>Soporte Técnico</strong> - Empresa Y (2018-2020)
-            <p>
-              Brindé soporte técnico a usuarios y mantenimiento de equipos
-              informáticos.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!--Educacion-->
-    <section id="education" class="education-section bg-light">
-      <div class="container">
-        <h2 class="section-title">Educación</h2>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <strong>Ingeniería en Sistemas</strong> - Universidad Tecnológica
-            Nacional (2015 - 2020)
-          </li>
-          <li class="list-group-item">
-            <strong>Certificación en Desarrollo Web</strong> - Platzi (2019)
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!--Habilidades-->
-    <section id="skills" class="skills-section">
-      <div class="container">
-        <h2 class="section-title">Habilidades</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">
-                JavaScript
-                <img
-                  src="https://img.icons8.com/?size=100&id=39853&format=png&color=000000"
-                  alt=""
-                />
-              </li>
-              <li class="list-group-item">Node.js</li>
-              <li class="list-group-item">React</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">HTML/CSS</li>
-              <li class="list-group-item">MongoDB</li>
-              <li class="list-group-item">Bootstrap</li>
-            </ul>
-          </div>
+    </div>
+  </section>
+  <!--Experiencia Laboral-->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <h2 class="section-title">Experiencia Laboral</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Desarrollador Full Stack</strong> - Empresa X
+          (2020-Presente)
+          <p>
+            Desarrollé aplicaciones web utilizando el stack MERN (MongoDB,
+            Express, React, Node.js).
+          </p>
+        </li>
+        <li class="list-group-item">
+          <strong>Soporte Técnico</strong> - Empresa Y (2018-2020)
+          <p>
+            Brindé soporte técnico a usuarios y mantenimiento de equipos
+            informáticos.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--Educacion-->
+  <section id="education" class="education-section bg-light">
+    <div class="container">
+      <h2 class="section-title">Educación</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Ingeniería en Sistemas</strong> - Universidad Tecnológica
+          Nacional (2015 - 2020)
+        </li>
+        <li class="list-group-item">
+          <strong>Certificación en Desarrollo Web</strong> - Platzi (2019)
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!--Habilidades-->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              JavaScript
+              <img width="48" height="48" src="https://img.icons8.com/pulsar-line/48/javascript.png" alt="javascript" />
+            </li>
+            <li class="list-group-item">
+              Node.js
+
+              <img width="48" height="48" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" />
+            </li>
+            <li class="list-group-item">
+              React
+              <img width="40" height="40" src="https://img.icons8.com/office/40/react.png" alt="react" />
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              HTML/CSS
+              <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" />
+              <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3" />
+            </li>
+            <li class="list-group-item">
+              MongoDB
+              <img width="48" height="48" src="https://img.icons8.com/color/48/mongo-db.png" alt="mongo-db" />
+            </li>
+            <li class="list-group-item">
+              Bootstrap
+              <img width="48" height="48" src="https://img.icons8.com/fluency/48/bootstrap.png" alt="bootstrap" />
+            </li>
+            <li class="list-group-item">
+              Python
+              <img width="48" height="48" src="https://img.icons8.com/fluency/48/python.png" alt="python" />
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    </div>
+  </section>
+  <section id="project" class="project-section bg-light">
+    <div class="container">
+      <h2 class="section-title">Proyectos en GitHub</h2>
+      <div class="project-item">
+        <a href="https://github.com/ivanohenry69" target="_blank" class="github-link">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          Visita mi GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Testimonios</h2>
+      <div class="testimonials-container">
+        <div class="testimonial-item">
+          <blockquote>
+            Soy un desarrollador altamente capacitado; 
+            con buenas habilidades para resolver problemas complejos.
+          </blockquote>
+          <p class="author">Empresa New-IT </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
